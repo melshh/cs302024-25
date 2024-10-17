@@ -13,25 +13,25 @@ function setup() {
 }
 
 function draw() {
-  background(32, 60, 197); // Water color
-  fill(32, 173, 197); // Water fill color
-  rect(0, height / 2, width, height / 2); // Water rectangle
+  background(32, 60, 197); 
+  fill(32, 173, 197); 
+  rect(0, height / 2, width, height / 2); 
 
-  // Draw the sun
+
   fill(255, 255, 0); // Sun color
-  ellipse(sunX, sunY, 100, 100); // Draw the sun
+  ellipse(sunX, sunY, 100, 100); // the sun
 
   // Move the sun horizontally
   sunX += 2; // Change this value for faster/slower movement
-  if (sunX > width) { // Reset sun position when it goes off-screen
+  if (sunX > width) { 
     sunX = 0;
   }
 
-  // Draw the duck
-  fill(255, 100, 0); // Duck color
-  ellipse(duckX, height / 2 + duckY, 40, 20); // Draw the duck
+ 
+  fill(236,250,34); // Duck color
+  ellipse(duckX, height / 2 + duckY, 40, 20); // the duck
 
-  // Move the duck up and down
+ 
   duckY += duckYSpeed; 
   if (duckY > 20 || duckY < -20) { // Change direction when it reaches a certain height
     duckYSpeed *= -1; // Reverse direction
